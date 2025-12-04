@@ -3,53 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nom du projet – Lazarowicz</title>
+    <title>Projet RobinDR400 – Lazarowicz</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="projets.css"> 
 </head>
 
-<body>
+<body class="project-page">
 
-<header>
-    <nav>
-        <a href="../index.html#home" class="menu-item">Home</a>
-    </nav>
-</header>
+    <!-- HEADER FIXE -->
+    <header class="project-header">
+        <span class="project-name">Simulateur RobinDR400 pour Prepar3D</span>
+        <a href="../index.html#home" class="project-home-link">Home</a>
+        <a href="../index.html#projets" class="project-projets-link">Projets</a>
+    </header>
 
+    <!-- CONTENU PRINCIPAL -->
+    <main class="project-content">
 
-<div class="container" style="padding-top:120px;">
+        <!-- TITRE ET CATÉGORIE -->
+        <section class="project-header-section">
+            <h1>Projet Simulateur RobinDR400 pour Prepar3D</h1>
+            <p class="project-subtitle">Simulation • Lua • Impression 3D</p>
+        </section>
 
-    <h1>Nom du projet</h1>
-    <p class="project-subtitle">Application • Web • Hardware</p>
+        <!-- IMAGE PRINCIPALE -->
+        <section class="project-image-section">
+            <img src="../assets/projets/RobinDR400.jpeg" 
+                 alt="Aperçu du projet" 
+                 class="project-cover">
+        </section>
 
-    <img src="../assets/projets/RobinDR400.jpeg" 
-         alt="Aperçu du projet" 
-         class="project-cover">
+        <!-- DESCRIPTION -->
+        <section class="project-description">
+            <h2>Description</h2>
+            <p>
+                L’initiative de ce projet provient d’une demande de l’aérodrome d’Étampes. Ces
+                derniers, à travers notre professeur encadrant Samir BOUAZIZ, nous ont contactés afin de
+                permettre aux élèves qui suivent la formation du BIA (Brevet d’Initiation à l’Aviation), de
+                pouvoir avoir une première approche du pilotage d’un avion sur un simulateur, et ainsi avoir
+                une première expérience de vol virtuel.
 
-    <h2>Description</h2>
-    <p>
-        Description détaillée du projet, objectifs, contexte, problème résolu, 
-        outils utilisés, défis rencontrés, etc.
-    </p>
+            </p>
+            <p>
+                L’objectif principal de ce projet est de pouvoir livrer un produit fonctionnel (hardware et
+                software) aux instructeurs d’Étampes, selon leurs cahiers des charges et celui de notre
+                professeur.
+            </p>
+        </section>
 
-    <h2>Fonctionnalités</h2>
-    <ul class="project-list">
-        <li>Fonction 1</li>
-        <li>Fonction 2</li>
-        <li>Fonction 3</li>
-    </ul>
+        <!-- FONCTIONNALITÉS -->
+        <section class="project-features">
+            <h2>Fonctionnalités</h2>
+            <ul class="project-list">
+                <li>Fonction 1 : Modularité et facile à déployer</li>
+                <li>Fonction 2 : Commande des gaz</li>
+                <li>Fonction 3 : Affichage des données avion</li>
+            </ul>
+        </section>
 
-    <h2>Galerie</h2>
-    <div class="grid">
-        <img class="gallery-img" src="../assets/projets/RobinDR400.jpeg">
-        <img class="gallery-img" src="../assets/projets/RobinDR400.jpeg">
-        <img class="gallery-img" src="../assets/projets/RobinDR400.jpeg">
-    </div>
+    </main>
 
-</div>
-
-<footer>
-    © 2025 – Lazarowicz
-</footer>
+    <footer class="site-footer">
+        © 2025 – Lazarowicz
+    </footer>
 
 </body>
 </html>

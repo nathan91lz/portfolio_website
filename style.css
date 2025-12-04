@@ -128,13 +128,30 @@ nav .menu-item.active {
     transform: translateY(-2px);
 }
 
+/* SECTIONS */
+.section {
+    min-height: 100vh;
+    padding: 120px 40px 40px;
+    text-align: center;
+}
+
 /* Section home */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    text-align: center;
+}
+
 .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    transform: translateY(-120px);
 }
 
 .home-image img {
@@ -158,13 +175,6 @@ nav .menu-item.active {
     .home-text {
         max-width: 100%;
     }
-}
-
-/* SECTIONS */
-.section {
-    min-height: 100vh;
-    padding: 120px 40px 40px;
-    text-align: center;
 }
 
 /* TIMELINE */
@@ -326,30 +336,6 @@ nav .menu-item.active {
 }
 
 
-/* PAGES PROJETS */
-.project-subtitle {
-    color: #555;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-.project-cover {
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    margin-bottom: 30px;
-}
-
-.project-list li {
-    margin-bottom: 8px;
-}
-
-.gallery-img {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
 /* CONTACTS */
 /* Email */
 .contact-email {
@@ -362,4 +348,95 @@ nav .menu-item.active {
 .contact-email:hover {
     color: #005bff;
     text-decoration: underline;
+}
+
+
+/* PAGES PROJETS */
+.project-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #143677;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.project-header .project-name {
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.project-header .project-home-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-header .project-home-link:hover {
+    background: #ffffff;
+    color: #143677;
+}
+
+/* Décaler le contenu sous le header */
+.project-content {
+    padding-top: 90px;
+}
+
+/* Titres et sous-titres */
+body.project-page h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+body.project-page .project-subtitle {
+    color: #888888;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Image principale */
+body.project-page .project-cover {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+/* Liste de fonctionnalités */
+body.project-page .project-list li {
+    margin-bottom: 8px;
+}
+
+/* Galerie */
+body.project-page .gallery-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Sections du projet */
+body.project-page section {
+    margin-bottom: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }

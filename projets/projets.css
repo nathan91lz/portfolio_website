@@ -1,0 +1,114 @@
+.project-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #143677;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.project-header .project-name {
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.project-header .project-home-link {
+    position: absolute;
+    left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-header .project-home-link:hover {
+    background: #ffffff;
+    color: #143677;
+}
+
+.project-header .project-projets-link {
+    position: absolute;
+    left: 120px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-header .project-projets-link:hover {
+    background: #ffffff;
+    color: #143677;
+}
+
+.project-content {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body.project-page h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+body.project-page .project-subtitle {
+    color: #888888;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Image principale du projet */
+body.project-page .project-cover {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+body.project-page .project-list li {
+    margin-bottom: 8px;
+}
+
+/* Galerie d'images */
+body.project-page .gallery-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+body.project-page section {
+    margin-bottom: 50px;
+}
+
+/* Responsive pour header et galerie */
+@media (max-width: 768px) {
+    .project-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
