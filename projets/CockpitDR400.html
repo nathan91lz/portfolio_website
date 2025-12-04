@@ -2,50 +2,54 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nom du projet – Lazarowicz</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<header>
     <nav>
-        <a href="/index.html">Home</a>
-        <a href="/projets.html">Projets</a>
-        <a href="/profile.html">Profil</a>
+        <a href="../index.html#home" class="menu-item">Home</a>
     </nav>
+</header>
 
-    <div class="container">
 
-        <h1>Nom du projet</h1>
-        <p>Type de projet : Application / Web / Hardware, etc.</p>
+<div class="container" style="padding-top:120px;">
 
-        <img src="/assets/projets/RobinDR400.jpeg" 
-             alt="Aperçu du projet" 
-             style="width:100%; border-radius:12px; margin-top:20px;">
+    <h1>Nom du projet</h1>
+    <p class="project-subtitle">Application • Web • Hardware</p>
 
-        <h2>Description</h2>
-        <p>
-            Texte expliquant ton projet, ce que tu as fait, les challenges,
-            l’objectif, etc.
-        </p>
+    <img src="../assets/projets/RobinDR400.jpeg" 
+         alt="Aperçu du projet" 
+         class="project-cover">
 
-        <h2>Fonctionnalités</h2>
-        <ul>
-            <li>Fonction 1</li>
-            <li>Fonction 2</li>
-            <li>Fonction 3</li>
-        </ul>
+    <h2>Description</h2>
+    <p>
+        Description détaillée du projet, objectifs, contexte, problème résolu, 
+        outils utilisés, défis rencontrés, etc.
+    </p>
 
-        <h2>Galerie</h2>
-        <img src="/projets/images/projet1-1.jpg" style="width:100%; margin-bottom:20px;">
-        <img src="/projets/images/projet1-2.jpg" style="width:100%; margin-bottom:20px;">
+    <h2>Fonctionnalités</h2>
+    <ul class="project-list">
+        <li>Fonction 1</li>
+        <li>Fonction 2</li>
+        <li>Fonction 3</li>
+    </ul>
 
+    <h2>Galerie</h2>
+    <div class="grid">
+        <img class="gallery-img" src="../assets/projets/RobinDR400.jpeg">
+        <img class="gallery-img" src="../assets/projets/RobinDR400.jpeg">
+        <img class="gallery-img" src="../assets/projets/RobinDR400.jpeg">
     </div>
 
-    <footer>
-        © 2025 – Lazarowicz
-    </footer>
+</div>
+
+<footer>
+    © 2025 – Lazarowicz
+</footer>
 
 </body>
 </html>

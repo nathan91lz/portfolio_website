@@ -1,26 +1,262 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <title>Lazarowicz - Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="projets.html">Projets</a>
-</nav>
+    <!-- HEADER FIXE -->
+    <header id="header">
+        <div class="header-container">
 
-<div class="hero">
-    <h1>Bienvenue sur mon site web</h1>
-    <p>Je suis Nathan Lazarowicz — Ingénieur électronique et logiciel embarqué et créateur de projets.</p>
+            <!-- LOGO -->
+            <a href="/index.html#home" class="logo">
+                <img src="/assets/logo_website.png" alt="Logo Lazarowicz">
+                <span>Lazarowicz</span>
+            </a>
+    
+            <!-- NAV -->
+            <nav class="nav-links">
+                <a href="#home" class="menu-item">Home</a>
+                <a href="#competences" class="menu-item">Compétences</a>
+                <a href="#experience" class="menu-item">Profile</a>
+                <a href="#projets" class="menu-item">Projets</a>
+                <a href="#contact" class="menu-item">Contact</a>
+            </nav>
+    
+            <!-- SOCIALS -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nathan-lazarowicz/" target="_blank">
+                    <img src="/assets/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/nathan91lz" target="_blank">
+                    <img src="/assets/git.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+
+    <!-- SECTION HOME -->
+    <section id="home" class="section home-section">
+        <div class="home-container">
+            <div class="home-image">
+                <img src="assets/photo_profile.png" alt="Photo de Nathan">
+            </div>
+            <div class="home-text">
+                <h1>Bienvenue sur mon site web</h1>
+                <p>Ingénieur Électronique et Développeur Logiciel</p>
+                <h2>À propos de moi</h2>
+                <p>Passionné par l’électronique et les nouvelles technologies dans les domaines automobiles et de la défense, j’ai
+                    construit un parcours professionnel pluridisciplinaire qui m’a donné
+                    une vision globale des systèmes et une forte capacité d’adaptation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION COMPETENCES -->
+    <section id="competences" class="section">
+        <h2>Mes Compétences</h2>
+        <details>
+            <summary>Développements</summary>
+            <ul>
+                <li><span class="skill-title">Programmation :</span> C, C++, Java, Python</li>
+                <li><span class="skill-title">Description matériel :</span> VHDL, Verilog, AMS</li>
+                <li><span class="skill-title">Configuration :</span> SELinux</li>
+                <li><span class="skill-title">Scripting :</span> Bash, Makefile</li>
+                <li><span class="skill-title">Description :</span> XML, HTML</li>
+                <li><span class="skill-title">Style :</span> LaTex, Markdown, CSS</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary>Outils</summary>
+            <ul> 
+                <li><span class="skill-title">Développement & DevOps :</span> Git, Docker, Jenkins</li>
+                <li><span class="skill-title">Gestion de projet :</span> Jira (AGILE), MS Project</li>
+                <li><span class="skill-title">Collaboration & Documentation :</span> Confluence, Suite Office</li>
+                <li><span class="skill-title">OS :</span> Windows, UNIX</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary>Logiciels</summary>
+            <ul>
+                <li><span class="skill-title">CAO Électronique (EDA) :</span> Altium Designer, Eagle, KiCad, EasyEDA</li>
+                <li><span class="skill-title">FPGA :</span> Quartus</li>
+                <li><span class="skill-title">IDE Microcontrôleurs :</span> CubeIDE</li>
+                <li><span class="skill-title">CAO Mécanique (CAD) :</span> SolidWorks, Catia V5, Fusion 360</li>
+                <li><span class="skill-title">IDE Développement logiciel :</span> Android Studio, NetBeans</li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- SECTION PROFIL -->
+    <section id="experience" class="section">
+        <h2>Expériences Professionnelles</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <div class="timeline-content">
+                <strong>Développeur logiciel Android IVI (2024–2025)</strong><br>
+                <span class="company">Forvia (Paris, France)</span>
+                <ul>
+                    <li>Développement d’une application Android d’IVI : Library et application</li>
+                    <li>Technologies : Android Java, Jenkins, SELinux, Makefile</li>
+                    <li>Architecture embarquée automobile, module GNSS, plateforme UNIX</li>
+                    <li>Outils : Git, Jira, Confluence</li>
+                    <p>→ Déployée en véhicules pour tests terrain, exploitée par l’équipe validation et en debug interne</p>
+                </ul>
+            </div>
+        </li>
+
+        <li class="timeline-item">
+            <div class="timeline-content">
+                <strong>Recherche en laboratoire, stage (2 mois – 2024)</strong><br>
+                <span class="company">Hella (Lippstadt, Allemagne)</span>
+                <ul>
+                    <li>Étude électromagnétique de bobines à noyaux imprimés (Impression 3D, OmicronLab Bode analyzer, CAO Catia & Cura)</li>
+                    <li>Prédiction de la capacité parasitique d’un inducteur via IA CNN (Python TensorFlow)</li>
+                    <p>→ Modèle CNN avec erreur &lt; 5%, intégré à un article co-auteur (PCIM)</p>
+                </ul>
+            </div>
+        </li>
+
+        <li class="timeline-item">
+            <div class="timeline-content">
+                <strong>Ingénieur Prototypiste (2022–2024)</strong><br>
+                <span class="company">Hella (Lippstadt, Allemagne)</span>
+                <ul>
+                    <li>Conception et assemblage de démonstrateurs marketing automobile</li>
+                    <li>Gestion de projet : Gantt, BOM, Cycle V</li>
+                    <li>Modélisation 3D (SolidWorks), impression 3D</li>
+                    <li>Conception PCB (EasyEDA), câblage TBT/BT</li>
+                    <p>→ Démonstrateurs exposés aux salons CES 2023, CES 2024 et IAA</p>
+                    <p>→ Réalisation complète d’un démonstrateur et pilotage projet</p>
+                </ul>
+            </div>
+        </li>
+
+        <li class="timeline-item">
+            <div class="timeline-content">
+                <strong>Assistant stagiaire prototypiste (2 mois – 2022)</strong><br>
+                <span class="company">Hella (Lippstadt, Allemagne)</span>
+                <ul>
+                    <li>CAO (SolidWorks), impression 3D</li>
+                    <li>Conception PCB (EasyEDA), câblage</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+
+    <h2>Diplômes</h2>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <strong>Diplôme d'Ingénieur en Electronique et Informatique Embarqué - 2025</strong><br>
+                    <span class="company">Polytech Paris-Saclay</span>
+                    <ul>
+                        <p>→ Projet Casier à vin connecté</p>
+                    </ul>
+                </div>
+            </li>
+    
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <strong>Diplôme Universitaire Technologique en Génie Electrique et Informatique Industrielle - 2022</strong><br>
+                    <span class="company">Université de Troyes</span>
+                    <ul>
+                        <p>→ Projet : robot récupérateur de balle</p>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="section">
+        <h2>Mes Projets</h2>
+
+        <div class="grid">
+
+            <a class="card" href="projets/SimulateurVoiture.html">
+                <img src="assets/projets/SimulateurVoiture.jpeg" alt="">
+                <h3>Simulateur voiture rallye</h3>
+                <p>Projet personnel 2025 - 2 semaines</p>
+            </a>
+            
+            <a class="card" href="projets/CockpitDR400.html">
+                <img src="assets/projets/RobinDR400.jpeg" alt="">
+                <h3>Simulateur Cockpit Robin DR400 sur P3D</h3>
+                <p>Projet scolaire 2025 - 1 mois</p>
+            </a>
+    
+            <a class="card" href="projets/ECockpitDashboard.html">
+                <img src="assets/projets/ECockpitDashboard.jpeg" alt="">
+                <h3>Développment d'une application Android Java - ECockpit Dashboard</h3>
+                <p>Projet scolaire 2024 - 2 mois</p>
+            </a>
+    
+            <a class="card" href="projets/CaveAVinConnecte.html">
+                <img src="assets/projets/CaveAVinConnectee.jpeg" alt="">
+                <h3>PoC d'une Cave à vin connectée</h3>
+                <p>Projet scolaire 2024 - 6 mois</p>
+            </a>
+    
+            <a class="card" href="projets/BorneArcade.html">
+                <img src="assets/projets/BorneArcadeCover.jpeg" alt="">
+                <h3>Fabrication d'une borne d'arcade</h3>
+                <p>Projet personnel 2020 - 1 semaine</p>
+            </a>
+    
+    
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contacts</h2>
+        <p>Comment me contacter :</p>
+        <p>
+            <a href="mailto:nathan.lazarowicz@gmail.com" class="contact-email">
+                nathan.lazarowicz@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/nathan-lazarowicz/" target="_blank" class="contact-email">
+                LinkedIn
+            </a>
+        </p>
+    </section>
+
+
 </div>
 
-<footer>
-    © 2025 Lazarowicz — Tous droits réservés.
-</footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© 2025 <strong>Lazarowicz</strong> — Tous droits réservés.</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nathan-lazarowicz/" target="_blank">
+                <img src="/assets/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/nathan91lz" target="_blank">
+                <img src="/assets/git.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
