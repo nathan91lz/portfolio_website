@@ -100,15 +100,70 @@ body.project-page section {
     margin-bottom: 50px;
 }
 
-/* Responsive pour header et galerie */
+/* MOBILE */
 @media (max-width: 768px) {
+
+    /* HEADER GLOBAL */
     .project-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #143677;
+        height: auto;
+
+        padding: 10px 15px 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        gap: 8px;
+
+        z-index: 1000;
     }
 
-    .grid {
-        grid-template-columns: 1fr !important;
+    /* LIGNE DU HAUT : HOME + PROJETS */
+    .header-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-home-link,
+    .project-projets-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: bold;
+        align-items: center;
+        padding: 6px 12px;
+        margin-top: 60px;
+        border: 2px solid #ffffff;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .project-home-link:hover,
+    .project-projets-link:hover {
+        background: #fff;
+        color: #143677;
+    }
+
+    /* LIGNE DU BAS : TITRE */
+    .header-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 60px; /* ajuste si tu veux */
+    }
+
+    .project-name {
+        color: #d1d1d1;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    /* Décalage contenu à cause du header */
+    .project-content {
+        padding-top: 130px !important;
     }
 }

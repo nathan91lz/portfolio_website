@@ -432,11 +432,148 @@ body.project-page section {
     margin-bottom: 50px;
 }
 
-/* Responsive */
+/* MOBILE */
 @media (max-width: 768px) {
-    .project-header {
+
+    /* Global */
+    body {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    /* HEADER (toutes pages) */
+    header {
+        height: auto;
+        padding: 12px 0;
+    }
+
+    .header-container {
+        padding: 0 15px;
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+
+    nav .menu-item {
+        margin: 8px;
+        display: inline-block;
+        font-size: 0.95rem;
+    }
+
+    .logo img {
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    /* HOME */
+    .home-container {
+        flex-direction: column;
+        gap: 25px;
+        transform: none;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .home-image img {
+        width: 250px;
+        height: 250px;
+        margin-top: 250px;
+        object-fit: cover;
+        border-radius: 50%; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* TIMELINE */
+    .timeline {
+        padding-left: 20px;
+        border-left-width: 2px;
+    }
+
+    .timeline-item {
+        transform: none !important;
+        opacity: 1 !important; /* Toujours visible sur mobile */
+    }
+
+    .timeline-content {
+        padding: 12px 15px;
+    }
+
+    .timeline-item::before {
+        left: -32px;
+        width: 14px;
+        height: 14px;
+    }
+
+    /* PROJECT GRID */
+    .grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+        gap: 20px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    /* FOOTER */
+    .site-footer {
+        padding: 20px 10px;
+        font-size: 0.9rem;
+    }
+
+    /* ----------- PAGES PROJETS ----------- */
+
+    .project-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 15px;
+    }
+
+    .project-header .project-name {
+        font-size: 1rem;
+    }
+
+    .project-header .project-home-link {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .project-content {
+        padding-top: 100px;
+    }
+
+    /* TITRE / SOUS-TITRE */
+    body.project-page h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    body.project-page .project-subtitle {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* IMAGE */
+    body.project-page .project-cover {
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* GALLERIE */
+    .project-gallery .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* SECTIONS */
+    body.project-page section {
+        margin-bottom: 35px;
     }
 }
