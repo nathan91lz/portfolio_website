@@ -167,16 +167,6 @@ nav .menu-item.active {
     text-align: left;
 }
 
-@media (max-width: 768px) {
-    .home-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .home-text {
-        max-width: 100%;
-    }
-}
-
 /* TIMELINE */
 #experience .timeline-content {
     text-align: left;
@@ -233,6 +223,16 @@ nav .menu-item.active {
     color: #143677;
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #143677;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+
 /* animation active */
 .timeline-item.active {
     opacity: 1;
@@ -279,7 +279,7 @@ nav .menu-item.active {
     color: #333;
 }
 
-.skill-title {
+.title-bold {
     font-weight: bold;
     color: #000000;
 }
@@ -459,14 +459,14 @@ body.project-page section {
     }
 
     nav .menu-item {
-        margin: 8px;
+        margin: 4px;
         display: inline-block;
         font-size: 0.95rem;
     }
 
     .logo img {
-        height: 80px;
-        margin-top: 10px;
+        height: 60px;
+        margin-top: -10px;
     }
 
     /* HOME */
@@ -486,7 +486,7 @@ body.project-page section {
     .home-image img {
         width: 250px;
         height: 250px;
-        margin-top: 250px;
+        margin-top: 150px;
         object-fit: cover;
         border-radius: 50%; 
         box-shadow: 0 4px 15px rgba(0,0,0,0.2);
