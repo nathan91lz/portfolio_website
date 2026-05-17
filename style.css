@@ -151,7 +151,7 @@ nav .menu-item.active {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    transform: translateY(-120px);
+    transform: translateY(-30px);
 }
 
 .home-image img {
